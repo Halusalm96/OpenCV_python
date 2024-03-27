@@ -8,7 +8,7 @@ import os
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
 # 이미지 파일의 절대 경로를 생성합니다.
-img_path = os.path.join(current_dir, 'data', 'lena.jpg')
+img_path = os.path.join(current_dir, 'data', 'tsukuba_l.png')
 
 src = cv2.imread(img_path, cv2.IMREAD_GRAYSCALE)
 

@@ -24,6 +24,7 @@ hist01 = cv2.calcHist([bgr], [0,1], None,
 plt.title('hist01')
 plt.ylim(0, 31)
 plt.imshow(hist01, interpolation = "nearest")
+plt.colorbar()
 plt.show()
 
 #2
@@ -32,6 +33,7 @@ hist02 = cv2.calcHist([bgr], [0,2], None,
 plt.title('hist02')
 plt.ylim(0, 31)
 plt.imshow(hist02, interpolation = "nearest")
+plt.colorbar()
 plt.show()
 
 #3
@@ -40,4 +42,5 @@ hist12 = cv2.calcHist([bgr], [1,2], None,
 plt.title('hist12')
 plt.ylim(0, 31)
 plt.imshow(hist02, interpolation = "nearest")
+plt.colorbar()
 plt.show()
