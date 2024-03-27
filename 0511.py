@@ -2,12 +2,13 @@
 import cv2
 import numpy as np
 
-src = np.array([[2, 2, 4, 4],
-                [2, 2, 4, 4],
-                [4, 4, 4, 4],
-                [4, 4, 4, 4]
+src = np.array([[1, 2, 4, 3],
+                [0, 6, 5, 7],
+                [0, 1, 2, 3],
+                [4, 5, 6, 7]
               ], dtype=np.uint8)
 #1
+# 히스토그램 평활화하는 함수
 dst = cv2.equalizeHist(src)
 print('dst =', dst)
 

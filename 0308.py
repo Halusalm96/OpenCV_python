@@ -4,9 +4,11 @@ import numpy as np
 
 img = np.zeros(shape=(512,512,3), dtype=np.uint8) + 255
 
+# 다각형 그리기
 pts1 = np.array([[100, 100], [200, 100], [200, 200], [100, 200]])
 pts2 = np.array([[300, 200], [400, 100], [400, 200]])
 
+# 다각형 내무 색 채우기
 cv2.fillConvexPoly(img, pts1, color=(255, 0, 0))
 
 cv2.fillPoly(img, [pts2], color=(0, 0, 255))

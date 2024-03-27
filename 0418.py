@@ -1,9 +1,19 @@
 # 0418.py: OpenCV-Python Tutorials 참조
 import cv2
 import numpy as np
+import os
 
-src1 = cv2.imread('./data/lena.jpg')
-src2 = cv2.imread('./data/opencv_logo.png')
+# 현재 스크립트가 실행되는 디렉터리를 가져옵니다.
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# 이미지 파일의 절대 경로를 생성합니다.
+img_path1 = os.path.join(current_dir, './data/lena.jpg')
+img_path2 = os.path.join(current_dir, './data/opencv_logo.png')
+
+src1 = cv2.imread(img_path1) 
+src2 = cv2.imread(img_path2) 
+# src1 = cv2.imread('./data/lena.jpg')
+# src2 = cv2.imread('./data/opencv_logo.png')
 cv2.imshow('src2',  src2)
 
 #1

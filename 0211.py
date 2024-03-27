@@ -2,7 +2,7 @@
 import cv2
 import matplotlib.pyplot as plt
 
-#1
+#1 함수 실행??
 def handle_key_press(event):
     if event.key == 'escape':
         cap.release()

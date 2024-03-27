@@ -8,17 +8,23 @@ direction = 0 # right
 
 while True:   
     key = cv2.waitKeyEx(30)    
+# 키 값 확인
+    print(key)
+    # 키 값 확인을 통한 값 정리 (이중에 1택)
+    # W=119 / A=97 / S=115 / D=100
+    # I=105 / J=106 / K=107 / L=108
+    # 8=56 / 4=52 / 2=50 / 6=54
     if key == 0x1B: 
         break;
-    
+
 # 방향키 방향전환 
-    elif key == 0x270000: # right
+    elif key == 0x64: # right
         direction = 0
-    elif key == 0x280000: # down
+    elif key == 0x73: # down
         direction = 1
-    elif key == 0x250000: # left
+    elif key == 0x61: # left
         direction = 2
-    elif key == 0x260000: # up
+    elif key == 0x77: # up
         direction = 3
         
 # 방향으로 이동 

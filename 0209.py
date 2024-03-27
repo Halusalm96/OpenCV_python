@@ -1,10 +1,13 @@
 # 0209.py
 '''
+# 설치해야 실행 가능
  pip install youtube_dl
  pip install pafy
 '''
 import cv2, pafy
+# 유튜브 영상 가져오기
 url = 'https://www.youtube.com/watch?v=u_Q7Dkl7AIk'
+# 유튜브 영상 읽기
 video = pafy.new(url)
 print('title = ', video.title)
 print('video.rating = ', video.rating)
@@ -14,6 +17,7 @@ best = video.getbest() # video.getbest(preftype='mp4')
 print('best.resolution', best.resolution)
 
 cap=cv2.VideoCapture(best.url)
+# 반복으로 영상 호출
 while(True):
         retval, frame = cap.read()
         if not retval:
